@@ -1,11 +1,12 @@
-import React, { Component } from "react";
-import { Button, Table } from "semantic-ui-react";
+import React from 'react';
+import { GetServerSidePropsContext, NextPage } from 'next';
+import { Button, Table } from 'semantic-ui-react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Layout from 'components/Layout';
 import Campaign from 'ethereum/campaign';
 import RequestRow from 'components/RequestRow';
-import { GetServerSidePropsContext, NextPage } from 'next';
-import { useRouter } from 'next/router';
+
 
 export type Request = {
     description: string;

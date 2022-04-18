@@ -1,10 +1,11 @@
-import React, { ChangeEvent, useState } from "react";
-import { Form, Button, Input, Message } from "semantic-ui-react";
+import React, { ChangeEvent, useState } from 'react';
+import { NextPage } from 'next';
+import { useRouter } from 'next/router';
+import { Form, Button, Input, Message } from 'semantic-ui-react';
 import Layout from 'components/Layout';
 import factory from 'ethereum/factory';
 import web3 from 'ethereum/web3';
-import { useRouter } from 'next/router';
-import { NextPage } from 'next';
+
 
 const CampaignNew: NextPage = () => {
     const [minimumContribution, setMinimumContribution] = useState<string>('');

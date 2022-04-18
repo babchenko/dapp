@@ -1,9 +1,9 @@
-import React, { ChangeEvent, useEffect, useState } from "react";
-import { Form, Button, Message, Input } from "semantic-ui-react";
+import React, { ChangeEvent, useEffect, useState } from 'react';
+import { GetServerSidePropsContext, NextPage } from 'next';
+import { Form, Button, Message, Input } from 'semantic-ui-react';
 import Campaign from 'ethereum/campaign';
 import web3 from 'ethereum/web3';
 import Layout from 'components/Layout';
-import { GetServerSidePropsContext, NextPage } from 'next';
 import { useRouter } from 'next/router';
 
 type RequestNewProps = {
