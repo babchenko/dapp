@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import type { GetServerSideProps, NextPage } from 'next'
 import { Button, Card } from 'semantic-ui-react'
 import factory from 'ethereum/factory';

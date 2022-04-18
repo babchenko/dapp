@@ -3,7 +3,7 @@ import web3 from './web3';
 
 import CampaignContract from './build/Campaign.json';
 
-const Campaign = (address: string | string[] | undefined) => {
+const Campaign = (address: string | string[]) => {
 
     if (Array.isArray(address)) {
         address = address[0];
